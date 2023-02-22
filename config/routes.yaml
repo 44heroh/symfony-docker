@@ -1,0 +1,10 @@
+controllers:
+    resource:
+        path: ../src/Shared/Infrastructure/Controller/
+        namespace: App\Controller
+    type: attribute
+
+test:
+    path: /health-check
+    controller: App\Shared\Infrastructure\Controller\HealthCheckAction::__invoke
+    methods: [ 'GET' ]
